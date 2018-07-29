@@ -200,7 +200,8 @@
 #define BP_VOICE		"vocal synthesiser"
 #define BP_STACK		"stack"
 #define BP_OPTICS		"optics"
-
+#define BP_FLOAT		"floatation disc"
+#define BP_JETS			"maneuvering jets"
 // Limbs.
 #define BP_L_FOOT "l_foot"
 #define BP_R_FOOT "r_foot"
@@ -219,6 +220,8 @@
 // Prosthetic helpers.
 #define BP_IS_ROBOTIC(org)  (org.status & ORGAN_ROBOTIC)
 #define BP_IS_ASSISTED(org) (org.status & ORGAN_ASSISTED)
+#define BP_IS_BRITTLE(org)  (org.status & ORGAN_BRITTLE)
+#define BP_IS_CRYSTAL(org)  (org.status & ORGAN_CRYSTAL)
 
 #define SYNTH_BLOOD_COLOUR "#030303"
 #define SYNTH_FLESH_COLOUR "#575757"
@@ -269,6 +272,7 @@
 #define SPECIES_PROMETHEAN  "Promethean"
 #define SPECIES_XENO        "Xenophage"
 #define SPECIES_ALIEN       "Humanoid"
+#define SPECIES_ADHERENT    "Adherent"
 
 #define SURGERY_CLOSED 0
 #define SURGERY_OPEN 1
